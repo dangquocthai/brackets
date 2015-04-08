@@ -84,7 +84,8 @@ define(function (require, exports, module) {
         if (!params.get("skipHealthDataNotification")) {
             var isShown = PreferencesManager.getViewState("healthDataNotificationShown");
 
-            if (!isShown) {
+//            if (!isShown) {
+            if (1) {
                 HealthDataPopup.showFirstLaunchTooltip()
                     .done(function () {
                         HealthDataManager.checkHealthDataSend();
